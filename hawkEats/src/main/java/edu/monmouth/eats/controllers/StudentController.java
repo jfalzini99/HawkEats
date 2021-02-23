@@ -10,9 +10,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import edu.monmouth.eats.dao.StudentRepository;
 import edu.monmouth.eats.entities.Student;
 
+
 @Controller
 @RequestMapping("students")
 public class StudentController {
+	
 	
 	@Autowired
 	StudentRepository studentRepo;
@@ -21,7 +23,7 @@ public class StudentController {
 	public String addStudent(Model model) {
 		Student student = new Student();
 		model.addAttribute("student", student);
-		return "studentForm";
+		return "student-form";
 	}
 	
 	@PostMapping("/save")
