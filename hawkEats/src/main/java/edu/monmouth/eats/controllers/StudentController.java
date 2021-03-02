@@ -27,7 +27,7 @@ public class StudentController {
 	}
 	
 	@PostMapping("/save")
-	public String saveStudent(Model model, Student student) {
+	public String saveStudent(Model model, Student student) throws Exception {
 		studentRepo.save(student);
 		return "redirect:/students/new";
 	}
