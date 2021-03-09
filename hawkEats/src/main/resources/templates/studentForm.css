@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+	background-color: DarkGrey;
+}
+
+nav {
+	padding-bottom: 30px;
+}
+
+div.container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: auto;
+	border: 5px solid white;
+	background-color: Black;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 50px;
+}
+
+input {
+	text-align: center;
+	display: block;
+	padding-bottom: 5px;
+	margin: auto;
+	margin-bottom: 5px;
+}
+
+button {
+	margin-top: 10px;
+}
